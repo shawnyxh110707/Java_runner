@@ -22,7 +22,7 @@ def button_clicked():
 def browse_file():
     global file_addition
     file_addition = filedialog.askopenfilename()
-    entry.delete(0,-1)
+    entry.delete(first=0,last = len(file_addition))
     entry.insert(0,file_addition)
 
 main = __init__()
